@@ -1,0 +1,16 @@
+{
+    "name": "symfony-standard-requirejs",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "almond": "0.3.0",
+        "requirejs": "2.1.15",
+        "rjs": "2.1.15"
+    }
+}

@@ -1,0 +1,23 @@
+{% extends "AppBundle::layout.html.twig" %}
+
+{% block javascripts %}
+    {% if app.environment == 'prod' %}
+        <script src="{{ asset('app/dist/main.js') }}"></script>
+    {% else %}
+        <script>var require = {urlArgs: 'bust=' + (new Date()).getTime()};</script>
+        <script data-main="app/main" src="{{ asset('app/vendor/requirejs/require.js') }}"></script>
+    {% endif %}
+
+    <script>
+        requirejs.config({
+            config:  {
+                'src/config': {
+                    user: {
+                        id:       1,
+                        username: 'John Doe'
+                    }
+                }
+            }
+        });
+    </script>
+{% endblock %}

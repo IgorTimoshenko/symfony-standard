@@ -10,3 +10,8 @@
 /vendor/
 /bin/
 /composer.phar
+/bower_components/
+/node_modules/
+/web/app/dist/
+/web/app/vendor/
+/r.js

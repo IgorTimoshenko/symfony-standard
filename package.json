@@ -1,0 +1,8 @@
+{
+    "name": "symfony-standard-requirejs",
+    "private": true,
+    "dependencies": {
+        "gulp": "3.8.8",
+        "yargs": "1.3.2"
+    }
+}
